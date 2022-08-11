@@ -35,6 +35,12 @@ h4 {
     margin-bottom: -16px;
 }
 
+img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 60px;
+}
+
 #resume {
     display: flex;
     flex-flow: row wrap;
@@ -42,7 +48,13 @@ h4 {
 
 #intro {
     padding: 10px 0;
-    flex-basis: 100%;
+    flex-basis: 50%;
+}
+
+#portrait {
+    margin-top: 20px;
+    text-align: right;
+    flex-basis: 50%;
 }
 
 #experience {
@@ -74,11 +86,22 @@ h4 {
 @media (max-width: 800px) {
 
     #resume { flex-flow: column; }
+    #portrait {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    img {
+        max-width: 80%;
+        min-width: 30%;
+        height: auto;
+    }
     #experience {
         border-top: 1px solid rgb(167, 167, 167);
     }
     #sidebar {
         flex-basis: 100%;
+        padding-left: 0;
         border-left: none;
         border-top: 1px solid rgb(167, 167, 167);
         border-bottom: 1px solid rgb(167, 167, 167);
