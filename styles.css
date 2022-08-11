@@ -1,10 +1,15 @@
 .container {
     justify-content: center;
-    padding: 0 40px;
-    margin: auto 10%;
+    padding: 0 50px;
+    margin: auto;
     background-color: lightgray;
     border: 2px solid hsl(271, 89%, 65%);
     border-radius: 15px;
+    max-width: 800px;
+}
+
+.block-content {
+    margin: 10px;
 }
 
 .subtitle {
@@ -13,12 +18,8 @@
     color: gray;
 }
 
-.block-content {
-    margin: 10px;
-}
-
 .block-content p {
-    padding: 0 0 10px 10px;
+    padding-left: 10px;
 }
 
 h4 {
@@ -26,7 +27,7 @@ h4 {
 }
 
 #contact-info {
-    padding: 10px 30px;
+    padding: 10px 0;
     margin-bottom: 20px;
 }
 
@@ -40,17 +41,22 @@ h4 {
 }
 
 #intro {
-    padding: 10px 30px;
+    padding: 10px 0;
     flex-basis: 100%;
 }
 
 #experience {
-    padding: 10px 20px;
+    padding-top: 10px;
+    padding-right: 25px;
     flex: 2;
 }
 
+.exp-block {
+    margin-top: 10px;
+}
+
 #sidebar {
-    border-left: 1px solid black;
+    border-left: 1px solid rgb(167, 167, 167);
     padding: 10px 20px;
     flex: 1;
 }
@@ -60,10 +66,27 @@ h4 {
 }
 
 #footer {
+    margin: 12px;
+    text-align: center;
     flex-basis: 100%;
 }
 
 @media (max-width: 800px) {
+
     #resume { flex-flow: column; }
-    #sidebar { border-left: none; padding-left: 20px; }
+    #experience {
+        border-top: 1px solid rgb(167, 167, 167);
+    }
+    #sidebar {
+        flex-basis: 100%;
+        border-left: none;
+        border-top: 1px solid rgb(167, 167, 167);
+        border-bottom: 1px solid rgb(167, 167, 167);
+    }
+    #sidebar .block-content {
+        margin: 0;
+    }
+    #contact-info {
+        text-align: center;
+    }
 }
