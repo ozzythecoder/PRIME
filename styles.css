@@ -117,6 +117,12 @@ footer {
     color: #777777;
 }
 
+@media (min-width: 300px) and (max-width: 450px) {
+    body::after {
+        background-size: auto;
+    }
+}
+
 @media (max-width: 900px) {
 
     #resume { flex-flow: column; }
