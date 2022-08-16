@@ -1,8 +1,9 @@
 body {
     background-image: url("water.jpg");
     background-size: 50%;
-    background-color: #FFFFFF99;
+    background-color: #ffffff99;
     background-blend-mode: lighten;
+    background-attachment: fixed;
 }
 
 .container {
